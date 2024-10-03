@@ -138,6 +138,8 @@ final class ModelMetadata
                 'hidden' => $this->attributeIsHidden($name, $model),
                 'appended' => $model->hasAppended($name),
                 'cast' => $cast,
+                'primary' => false,
+                'nullable' => true,
             ])
             ->values();
     }
