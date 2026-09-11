@@ -28,16 +28,16 @@
     ],
     "require": {
         "php": ">=8.2",
-        "api-platform/documentation": "^4.3",
-        "api-platform/hal": "^4.3",
-        "api-platform/hydra": "^4.3",
-        "api-platform/json-api": "^4.3",
-        "api-platform/json-schema": "^4.3",
-        "api-platform/jsonld": "^4.3",
-        "api-platform/metadata": "^4.3",
-        "api-platform/openapi": "^4.3",
-        "api-platform/serializer": "^4.3.12",
-        "api-platform/state": "^4.3",
+        "api-platform/documentation": "^5.0@alpha",
+        "api-platform/hal": "^5.0@alpha",
+        "api-platform/hydra": "^5.0@alpha",
+        "api-platform/json-api": "^5.0@alpha",
+        "api-platform/json-schema": "^5.0@alpha",
+        "api-platform/jsonld": "^5.0@alpha",
+        "api-platform/metadata": "^5.0@alpha",
+        "api-platform/openapi": "^5.0@alpha",
+        "api-platform/serializer": "^5.0@alpha",
+        "api-platform/state": "^5.0@alpha",
         "illuminate/config": "^11.0 || ^12.0 || ^13.0",
         "illuminate/container": "^11.0 || ^12.0 || ^13.0",
         "illuminate/contracts": "^11.0 || ^12.0 || ^13.0",
@@ -49,13 +49,13 @@
         "laravel/framework": "^11.0 || ^12.0 || ^13.0",
         "symfony/deprecation-contracts": "^3.6",
         "symfony/type-info": "^7.4 || ^8.0",
-        "symfony/web-link": "^6.4 || ^7.4 || ^8.0",
+        "symfony/web-link": "^7.4 || ^8.0",
         "willdurand/negotiation": "^3.1"
     },
     "require-dev": {
-        "api-platform/graphql": "^4.3",
-        "api-platform/http-cache": "^4.3",
-        "api-platform/mcp": "^4.3",
+        "api-platform/graphql": "^5.0@alpha",
+        "api-platform/http-cache": "^5.0@alpha",
+        "api-platform/mcp": "^5.0@alpha",
         "doctrine/dbal": "^4.0",
         "larastan/larastan": "^2.0 || ^3.0",
         "laravel/sanctum": "^4.0",
@@ -98,13 +98,13 @@
             ]
         },
         "branch-alias": {
-            "dev-main": "4.4.x-dev",
+            "dev-main": "5.0.x-dev",
             "dev-4.2": "4.2.x-dev",
             "dev-3.4": "3.4.x-dev",
             "dev-4.1": "4.1.x-dev"
         },
         "symfony": {
-            "require": "^6.4 || ^7.4 || ^8.0"
+            "require": "^7.4 || ^8.0"
         },
         "thanks": {
             "name": "api-platform/api-platform",
