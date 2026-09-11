@@ -473,7 +473,6 @@ class ApiPlatformProvider extends ServiceProvider
                 $app->make(SwaggerUiProvider::class),
                 $app->make(SerializerInterface::class),
                 $app->make(SerializerContextBuilderInterface::class),
-                null,
                 $app->make(DenormalizationViolationFactoryInterface::class),
             );
         });
