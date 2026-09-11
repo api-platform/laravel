@@ -45,6 +45,8 @@ class JsonApiTest extends TestCase
             $config->set('api-platform.docs_formats', ['jsonapi' => ['application/vnd.api+json']]);
             $config->set('api-platform.resources', [app_path('Models'), app_path('ApiResource')]);
             $config->set('api-platform.pagination.items_per_page_parameter_name', 'limit');
+            // This suite asserts IRIs in "data.id", which is no longer the default since 5.0.
+            $config->set('api-platform.jsonapi.use_iri_as_id', true);
             $config->set('api-platform.defaults', [
                 'route_prefix' => '/api',
                 'parameters' => [
