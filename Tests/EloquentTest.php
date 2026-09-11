@@ -433,9 +433,17 @@ class EloquentTest extends TestCase
 
     public function testBooleanFilter(): void
     {
-        BookFactory::new()->has(AuthorFactory::new())->count(10)->create();
+        $books = BookFactory::new()->has(AuthorFactory::new())->count(10)->create();
         $res = $this->get('/api/books?published=notabool', ['Accept' => ['application/ld+json']]);
         $this->assertEquals($res->getStatusCode(), 422);
+
+        $res = $this->get('/api/books?published=true', ['Accept' => ['application/ld+json']]);
+        $res->assertOk();
+        $this->assertSame($books->count(), $res->json()['totalItems']);
+
+        $res = $this->get('/api/books?published=false', ['Accept' => ['application/ld+json']]);
+        $res->assertOk();
+        $this->assertSame(0, $res->json()['totalItems']);
 
         $res = $this->get('/api/books?published=0', ['Accept' => ['application/ld+json']]);
         $this->assertEquals($res->getStatusCode(), 200);
